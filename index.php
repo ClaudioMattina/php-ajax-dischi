@@ -23,8 +23,11 @@
     <?php 
         /* importo "data" contenente l'array */
         include __DIR__ . '/server/data.php';
+        include __DIR__ . '/partial/header.php'
     ?>
+
     <div id="app" class="my-container d-flex my-5">
+        <!-- ciclo for che cicla gli elementi di albums importato tramite include -->
         <div class="card-container d-flex" v-for='element in albums' >
             <div class="img-container">
                 <img :src="element.url" alt="">
@@ -37,8 +40,9 @@
 
         </div>
     </div>
-
+<!-- importazione axios -->
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- importazione my script -->
 <script src="script.js"></script>
 </body>
 </html>
