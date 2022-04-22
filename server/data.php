@@ -1,6 +1,6 @@
 <?php 
 
-$album = [
+$albums = [
     [
         'title' => 'ciaoneee',
         'url' => '',

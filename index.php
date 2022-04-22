@@ -14,9 +14,12 @@
     <title>Document</title>
 </head>
 <body>
+
+
     <?php 
+        /* importo "data" contenente l'array */
         include __DIR__ . '/server/data.php';
-        echo var_dump( $album[0]['title'])
+        
     ?>
 
 
