@@ -24,14 +24,16 @@
         /* importo "data" contenente l'array */
         include __DIR__ . '/server/data.php';
     ?>
-    <div id="app" class="my-container d-flex ">
+    <div id="app" class="my-container d-flex my-5">
         <div class="card-container d-flex" v-for='element in albums' >
             <div class="img-container">
                 <img :src="element.url" alt="">
             </div>
-            <h1>{{element.title}}</h1>
-            <p>{{element.author}}</p>
-            <p>{{element.year}}</p>
+            <div class="content-container d-flex justify-content-center align-items-center flex-column text-center">
+                <h1>{{element.title}}</h1>
+                <p>{{element.author}}</p>
+                <p>{{element.year}}</p>
+            </div>
 
         </div>
     </div>
