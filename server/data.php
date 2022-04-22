@@ -8,43 +8,43 @@ $albums = [
         'year' => '1995'
     ],
     [
-        'title' => 'ciaoneee',
+        'title' => 'ciao',
         'url' => '',
         'author' => 'ciccio',
         'year' => '1995'
     ],
     [
-        'title' => 'ciaoneee',
+        'title' => 'ciaino',
         'url' => '',
         'author' => 'ciccio',
         'year' => '1995'
     ],
     [
-        'title' => 'ciaoneee',
+        'title' => 'ciaetto',
         'url' => '',
         'author' => 'ciccio',
         'year' => '1995'
     ],
     [
-        'title' => 'ciaoneee',
+        'title' => 'salve',
         'url' => '',
         'author' => 'ciccio',
         'year' => '1995'
     ],
     [
-        'title' => 'ciaoneee',
+        'title' => 'daje',
         'url' => '',
         'author' => 'ciccio',
         'year' => '1995'
     ],
     [
-        'title' => 'ciaoneee',
+        'title' => 'ollè',
         'url' => '',
         'author' => 'ciccio',
         'year' => '1995'
     ],
     [
-        'title' => 'ciaoneee',
+        'title' => 'toppp',
         'url' => '',
         'author' => 'ciccio',
         'year' => '1995'

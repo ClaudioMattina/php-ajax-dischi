@@ -21,8 +21,12 @@
     <?php 
         /* importo "data" contenente l'array */
         include __DIR__ . '/server/data.php';
-        
     ?>
+    <div>
+        <?php foreach($albums as $element) {?>
+            <h1> <?php echo $element['title'] ?> </h1>    
+        <?php } ?>
+    </div>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="script.js"></script>
