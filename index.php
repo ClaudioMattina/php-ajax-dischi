@@ -13,6 +13,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- link vue 2 -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -22,10 +24,16 @@
         /* importo "data" contenente l'array */
         include __DIR__ . '/server/data.php';
     ?>
-    <div>
-        <?php foreach($albums as $element) {?>
-            <h1> <?php echo $element['title'] ?> </h1>    
-        <?php } ?>
+    <div id="app" class="my-container d-flex ">
+        <div class="card-container d-flex" v-for='element in albums' >
+            <div class="img-container">
+                <img :src="element.url" alt="">
+            </div>
+            <h1>{{element.title}}</h1>
+            <p>{{element.author}}</p>
+            <p>{{element.year}}</p>
+
+        </div>
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
